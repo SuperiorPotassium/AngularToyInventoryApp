@@ -1,0 +1,9 @@
+<h3>Toys Inventory App</h3>
+
+<div class="grid grid-pad">
+    <a *ngFor="let toy of toys" class="col-1-4" routerLink="/toyDetail/{{toy.id}}">
+        <div class="module hero">
+            <h4>{{toy.toyName}}</h4>
+        </div>
+    </a>
+</div>
